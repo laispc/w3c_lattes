@@ -4,7 +4,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 	<curriculo id="1" dataCriacao="21-11-2015">
-		<!-- Dados pessoais-->
+		<!-- DADOS PESSOAIS-->
 		<pessoal>
 			<nome>
 				<primeiroNome>Miles "Tails"</primeiroNome>
@@ -12,7 +12,7 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
 			</nome>
 
-			<foto></foto>
+			<arquivoFoto>tails.jpg</arquivoFoto>
 
 			<biografia_curta>
 				Tails has been described as a mechanical prodigy who rivals Dr. Eggman, however he has yet to realize his full potential. Additionally, by spinning his two tails like a helicopter rotor, he has the unique ability to push himself through the air.
@@ -30,18 +30,61 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 			</endereco>
 		</pessoal>
 
-		<!--Formação -->
+		<!--FORMAÇÃO -->
 		<formacao>
 			<instituicao>University of Sega</instituicao>
 		</formacao>
 
-		<!--Publicações -->
+		<!--PUBLICAÇÕES -->
 		<publicacoes>
+			<!--Artigos completos publicados em periódicos -->
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Echidna, Knuckles.</autores>
+				<titulo>The Effects of the Chaos Emeralds</titulo>
+				<periodico>Journal of Emerald Island</periodico>
+				<pagina>10-18</pagina>
+				<ano>1992</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
 			
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic.</autores>
+				<titulo>A new approach for life by rings colleting</titulo>
+				<periodico>Journal of Green Hill</periodico>
+				<pagina>5-12</pagina>
+				<ano>1991</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
+
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic.</autores>
+				<titulo>Underwater survival</titulo>
+				<periodico>Journal of Labyrinth Zone</periodico>
+				<pagina>5-12</pagina>
+				<ano>1991</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
+			<!--Livros-->
+			<livrosPublicados>
+				<autores>Prower, Miles "Tails"</autores>
+				<titulo>Tornado: Airplane Mechanics</titulo>
+				<cidade>Mable Garden</cidade>
+				<editora>Mable Scrips</editora>
+				<ano>1995</ano>
+			</livrosPublicados>
+
+			<capitulosDeLivrosPublicados>
+				
+			</capitulosDeLivrosPublicados>
 		</publicacoes>
 
+		<!--ORIENTAÇÕES -->
 		<orientacoes>
-			
+			<!-- Orientações e supervisões em andamento-->
+			<!-- Orientações e supervisões concluidas-->
+			<orientacao status="concluida">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2000</inicio>
+			</orientacao>
 		</orientacoes>
 	</curriculo>
 

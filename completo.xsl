@@ -14,6 +14,16 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 				<!--CURRICULO COMPLETO-->
 				<xsl:for-each select="cvLattes/curriculo">
 
+					<!-- Topo da curriculo -->
+					<h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1>
+					<img>
+	                    <xsl:attribute name="src">
+	                        <xsl:value-of select="pessoal/arquivoFoto" />
+	                    </xsl:attribute>
+	                </img>
+	                <br />
+
+					<br />
 					<!--1)BIOGRAFIA CURTA-->
 					Biografia curta
 					<table border="1">
