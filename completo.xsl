@@ -8,11 +8,10 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 		<html>
 			<body>
 
-				<!-- Título da página -->
-				<title>Curriculo Lattes - <xsl:value-of select="cvLattes/curriculo[@id='1']/pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="cvLattes/curriculo[@id='1']/pessoal/nome/sobrenome"/> </title>
-
 				<!--CURRICULO COMPLETO-->
-				<xsl:for-each select="cvLattes/curriculo">
+				<xsl:for-each select="cvLattes/curriculo[@id='1']">
+					<!-- Título da página -->
+					<title>Curriculo Lattes - <xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/> </title>
 
 					<!-- Topo da curriculo -->
 					<h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1>
@@ -40,6 +39,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 		      			<tr bgcolor="#9acd32">
 		      				<td>Nome:</td>
 		      				<td><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></td>
+		      			</tr>
+		      			<tr>
 		      				<td>Citado como:</td>
 		      				<td><xsl:value-of select="pessoal/nome/nomeEmCitacoes"/></td>
 		      			</tr>
