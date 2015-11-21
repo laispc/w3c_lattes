@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="completo.xsl"?>
+<cvLattes
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
+	
+	<pessoal>
+		<primeiroNome>Laís</primeiroNome>
+	</pessoal>
+
+	<pessoal>
+		<primeiroNome>Lucas</primeiroNome>
+	</pessoal>
+
+	<pessoal>
+		<primeiroNome>Maria</primeiroNome>
+	</pessoal>
+
+</cvLattes>
