@@ -3,17 +3,58 @@
 <cvLattes
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
-	
-	<pessoal>
-		<primeiroNome>Laís</primeiroNome>
-	</pessoal>
+	<curriculo id="1" dataCriacao="21-11-2015">
+		<!-- Dados pessoais-->
+		<pessoal>
+			<nome>
+				<primeiroNome>Miles "Tails"</primeiroNome>
+				<sobrenome>Prower</sobrenome>
+				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
+			</nome>
 
-	<pessoal>
-		<primeiroNome>Lucas</primeiroNome>
-	</pessoal>
+			<foto></foto>
 
-	<pessoal>
-		<primeiroNome>Maria</primeiroNome>
-	</pessoal>
+			<biografia_curta>
+				Tails has been described as a mechanical prodigy who rivals Dr. Eggman, however he has yet to realize his full potential. Additionally, by spinning his two tails like a helicopter rotor, he has the unique ability to push himself through the air.
+			</biografia_curta>
+
+			<endereco>
+				<rua>Ring Street</rua>
+				<numero>100</numero>
+				<bairro>First Loop</bairro>
+				<complemento></complemento>
+				<cep>10100-010</cep>
+				<cidade>Act 01</cidade>
+				<estado>Green Hill</estado>
+				<pais>Sega</pais>
+			</endereco>
+		</pessoal>
+
+		<!--Formação -->
+		<formacao>
+			<instituicao>University of Sega</instituicao>
+		</formacao>
+
+		<!--Publicações -->
+		<publicacoes>
+			
+		</publicacoes>
+
+		<orientacoes>
+			
+		</orientacoes>
+	</curriculo>
+
+<!-- 	<curriculo id="2" dataCriacao="20-11-2015">
+		<pessoal>
+			<primeiroNome>Laís</primeiroNome>
+		</pessoal>
+	</curriculo>
+
+	<curriculo id="3" dataCriacao="19-11-2015">
+		<pessoal>
+			<primeiroNome>Tiago</primeiroNome>
+		</pessoal>
+	</curriculo> -->
 
 </cvLattes>
