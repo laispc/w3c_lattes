@@ -14,12 +14,13 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 					<title>Curriculo Lattes - <xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/> </title>
 
 					<!-- Topo da curriculo -->
-					<h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1>
 					<img>
 	                    <xsl:attribute name="src">
 	                        <xsl:value-of select="pessoal/arquivoFoto" />
 	                    </xsl:attribute>
 	                </img>
+	                <h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1>
+	                Ultima atualização em: <xsl:value-of select="@ultimaAtualizacao" />
 	                <br />
 
 					<br />
@@ -56,11 +57,57 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 		      				<td><xsl:value-of select="pessoal/endereco/rua"/></td>
 		      			</tr>
 	      			</table>
-	      		</xsl:for-each>
+	      			<br />
 
-	      		<!--2)FORMAÇÃO-->
-	      		<!--3)PUBLICAÇÕES-->
-	      		<!--4)ORIENTAÇÕES-->
+	      			<!--2)FORMAÇÃO-->
+		      		Formação
+		      		<table border="1" >
+		      			<xsl:for-each select="formacoes/formacao">
+		      				<tr> 		      					
+		      					<td><xsl:value-of select="inicio"/> - <xsl:value-of select="conclusao"/></td>
+		      				</tr>
+		      				<tr> 		      					
+		      					<td><xsl:value-of select="titulo"/></td>
+		      				</tr>
+		      				<tr> 		      					
+		      					<td><xsl:value-of select="instituicao"/></td>
+		      				</tr>
+		      				<tr> 		      					
+		      					<td><xsl:value-of select="orientador"/></td>
+		      				</tr>
+		      				<tr> 		      					
+		      					<td><xsl:value-of select="tema"/></td>
+		      				</tr>
+
+		      			</xsl:for-each>
+		      		</table>
+		      		<br />
+
+		      		<table border="1" >
+		      			<!-- Artigos completos publicados em periódicos  -->
+		      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
+		      				<tr>
+		      					<td><xsl:value-of select="autores"/></td>
+		      				</tr>
+		      			</xsl:for-each>
+		      		</table>
+		      		<br />
+
+		      		<!--3)PUBLICAÇÕES-->
+		      		Publicações
+	      			- Artigos completos publicados em periódicos
+	      			<table border="1" >
+		      			<!-- Artigos completos publicados em periódicos  -->
+		      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
+		      				<tr>
+		      					<td><xsl:value-of select="autores"/></td>
+		      				</tr>
+		      			</xsl:for-each>
+	      			</table>
+	      			<br />
+		      		<!--4)ORIENTAÇÕES-->
+	      		</xsl:for-each> <!-- FIM CURRÍCULO -->
+	      		
 			</body>
 		</html>
 	</xsl:template>

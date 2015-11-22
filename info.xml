@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="publicacoes.xsl"?>
+<?xml-stylesheet type="text/xsl" href="completo.xsl"?>
 <cvLattes
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
-	<curriculo id="1" dataCriacao="21-11-2015">
+	<curriculo id="1" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
 		<!-- DADOS PESSOAIS-->
 		<pessoal>
 			<nome>
@@ -31,15 +31,22 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 		</pessoal>
 
 		<!--FORMAÇÃO -->
-		<formacao>
-			<instituicao>University of Sega</instituicao>
-		</formacao>
+		<formacoes>	
+			<formacao>
+				<titulo>Mechanical Engineering</titulo>
+				<instituicao>University of Sega</instituicao>
+				<inicio>1986</inicio>
+				<conclusao>1991</conclusao>
+				<orientador>Charles The Hedgehog</orientador>
+				<tema>Study of Continuous Current Motors</tema>
+			</formacao>
+		</formacoes>
 
 		<!--PUBLICAÇÕES -->
 		<publicacoes>
 			<!--Artigos completos publicados em periódicos -->
 			<artigosCompletosPublicadosEmPeriodicos>
-				<autores>Prower, Miles "Tails"; The Echidna, Knuckles.</autores>
+				<autores>Prower, Miles "Tails"; The Echidna, Knuckles</autores>
 				<titulo>The Effects of the Chaos Emeralds</titulo>
 				<periodico>Journal of Emerald Island</periodico>
 				<pagina>10-18</pagina>
@@ -47,7 +54,7 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 			</artigosCompletosPublicadosEmPeriodicos>
 			
 			<artigosCompletosPublicadosEmPeriodicos>
-				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic.</autores>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic</autores>
 				<titulo>A new approach for life by rings colleting</titulo>
 				<periodico>Journal of Green Hill</periodico>
 				<pagina>5-12</pagina>
@@ -55,7 +62,7 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 			</artigosCompletosPublicadosEmPeriodicos>
 
 			<artigosCompletosPublicadosEmPeriodicos>
-				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic.</autores>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic</autores>
 				<titulo>Underwater survival</titulo>
 				<periodico>Journal of Labyrinth Zone</periodico>
 				<pagina>5-12</pagina>
