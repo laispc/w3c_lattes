@@ -82,17 +82,70 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 			</capitulosDeLivrosPublicados>
 		</publicacoes>
 
-		<!--ORIENTAÇÕES -->
+				<!--ORIENTAÇÕES -->
 		<orientacoes>
 			<!-- Orientações e supervisões em andamento-->
+			<orientacao status="emAndamento">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="emAndamento">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [2]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="emAndamento">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [3]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="emAndamento">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [4]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
 			<!-- Orientações e supervisões concluidas-->
 			<orientacao status="concluida">
 				<orientando>Cream The Rabbit</orientando>
 				<titulo>Sound-speed flying methods</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
-				<inicio>2000</inicio>
+				<fim>2000</fim>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods [2]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<fim>2000</fim>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods [3]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<fim>2000</fim>
 			</orientacao>
 		</orientacoes>
+		<!--Citações-->
+		<citacoes>
+			<autores>
+				<autor>Eggman</autor>
+				<autor> Sonic</autor>
+				<autor>Knuckles</autor>
+				<autor tipo="este">Tails</autor>
+			</autores>
+			<titulo>Uso eficiente das esmeraldas do caos</titulo>
+			<instituicao>University of Chaos Angel</instituicao>
+			<versao>3</versao>
+			<pagina>33-37</pagina>
+			<ano>2003</ano>
+		</citacoes>
+
+
+
 	</curriculo>
 
 <!-- 	<curriculo id="2" dataCriacao="20-11-2015">

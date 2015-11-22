@@ -1,0 +1,97 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>
+            Trabalho de Multimídia e Hipermídia
+        </title>
+        <link rel="stylesheet" type="text/css" href="Estilo.css"/>
+        <script type="text/javascript">
+            var xslStylesheet;
+            var myDOM;
+            var x;
+            
+            
+            function completo(){
+                reset();
+                xmlDoc=document.implementation.createDocument("","",null);
+				xslDoc=document.implementation.createDocument("","",null);
+			    xmlDoc.async = false;
+	            xslDoc.async = false;
+				xmlDocName = "info.xml";
+				xmlDoc.load(xmlDocName);
+				xslDoc.load("completo.xsl");
+	
+	            var xsltProcessor = new XSLTProcessor();
+				xsltProcessor.importStylesheet(xslDoc);
+				resultDocument = xsltProcessor.transformToFragment(xmlDoc,document);
+				document.getElementById("view").appendChild(resultDocument);
+            }
+            function orien(){
+                reset();
+                xmlDoc=document.implementation.createDocument("","",null);
+				xslDoc=document.implementation.createDocument("","",null);
+				xmlDoc.async = false;
+	            xslDoc.async = false;
+				xmlDocName = "info.xml";
+				xmlDoc.load(xmlDocName);
+				xslDoc.load("orientacao.xsl");
+	           
+	            var xsltProcessor = new XSLTProcessor();
+				xsltProcessor.importStylesheet(xslDoc);
+				resultDocument = xsltProcessor.transformToFragment(xmlDoc,document);
+				document.getElementById("view").appendChild(resultDocument);
+            }
+            function publi(){
+                reset();
+                xmlDoc=document.implementation.createDocument("","",null);
+				xslDoc=document.implementation.createDocument("","",null);
+				xmlDoc.async = false;
+				xslDoc.async = false;
+				xmlDocName = "info.xml";
+				xmlDoc.load(xmlDocName);
+				xslDoc.load("publi.xsl");
+				
+	            var xsltProcessor = new XSLTProcessor();
+				xsltProcessor.importStylesheet(xslDoc);
+				resultDocument = xsltProcessor.transformToFragment(xmlDoc,document);
+				document.getElementById("view").appendChild(resultDocument);
+            }
+            
+            function reset(){
+               	while(document.getElementById("view").hasChildNodes())
+               	{
+               	    document.getElementById("view").removeChild(document.getElementById("view").lastChild);
+               	}
+            }
+            
+            window.onload = completo;
+        </script>
+    </head>
+    <body>
+        <h1>Currículo Lattes</h1>
+
+        <div id="menu-vertical">
+           <table cellpadding="0" cellspacing="0">
+             <tr><td><button align="left" name="com" id="button1" type="button" onclick="completo()">Completo</button></td></tr>
+             <tr><td><button name="pub" id="button2" type="button" onclick="publi()">Publicações</button></td></tr>
+             <tr><td><button name="ori" id="button3" type="button" onclick="orien()">Orientações</button></td></tr>
+           </table>
+        </div>
+          
+
+        
+
+        <div id="view" class="view">
+            
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>
