@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XSL/completo.xsl"?>
+<cvLattes
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
+	<curriculo id="1" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
+		<!-- DADOS PESSOAIS-->
+		<pessoal>
+			<nome>
+				<primeiroNome>Miles "Tails"</primeiroNome>
+				<sobrenome>Prower</sobrenome>
+				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
+			</nome>
+
+			<arquivoFoto>Imagens/tails.jpg</arquivoFoto>
+
+			<biografia_curta>
+				Tails has been described as a mechanical prodigy who rivals Dr. Eggman, however he has yet to realize his full potential. Additionally, by spinning his two tails like a helicopter rotor, he has the unique ability to push himself through the air.
+			</biografia_curta>
+
+			<endereco>
+				<rua>Ring Street</rua>
+				<numero>100</numero>
+				<bairro>First Loop</bairro>
+				<complemento></complemento>
+				<cep>10100-010</cep>
+				<cidade>Act 01</cidade>
+				<estado>Green Hill</estado>
+				<pais>Sega</pais>
+			</endereco>
+		</pessoal>
+
+		<!--FORMAÇÃO -->
+		<formacoes>	
+			<formacao>
+				<titulo>Mechanical Engineering</titulo>
+				<instituicao>University of Sega</instituicao>
+				<inicio>1986</inicio>
+				<conclusao>1991</conclusao>
+				<orientador>Charles The Hedgehog</orientador>
+				<tema>Study of Continuous Current Motors</tema>
+			</formacao>
+		</formacoes>
+
+		<!--PUBLICAÇÕES -->
+		<publicacoes>
+			<!--Artigos completos publicados em periódicos -->
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Echidna, Knuckles</autores>
+				<titulo>The Effects of the Chaos Emeralds</titulo>
+				<periodico>Journal of Emerald Island</periodico>
+				<pagina>10-18</pagina>
+				<ano>1992</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
+			
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic</autores>
+				<titulo>A new approach for life by rings colleting</titulo>
+				<periodico>Journal of Green Hill</periodico>
+				<pagina>5-12</pagina>
+				<ano>1991</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
+
+			<artigosCompletosPublicadosEmPeriodicos>
+				<autores>Prower, Miles "Tails"; The Hedgehog, Sonic</autores>
+				<titulo>Underwater survival</titulo>
+				<periodico>Journal of Labyrinth Zone</periodico>
+				<pagina>5-12</pagina>
+				<ano>1991</ano>
+			</artigosCompletosPublicadosEmPeriodicos>
+			<!--Livros-->
+			<livrosPublicados>
+				<autores>Prower, Miles "Tails"</autores>
+				<titulo>Tornado: Airplane Mechanics</titulo>
+				<cidade>Mable Garden</cidade>
+				<editora>Mable Scrips</editora>
+				<ano>1995</ano>
+			</livrosPublicados>
+
+			<capitulosDeLivrosPublicados>
+				
+			</capitulosDeLivrosPublicados>
+		</publicacoes>
+
+				<!--ORIENTAÇÕES -->
+		<orientacoes>
+			<!-- Orientações e supervisões em andamento-->
+			
+			<orientacao status="emAndamento">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [4]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="emAndamento">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods [3]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<fim>2000</fim>
+			</orientacao>
+			<!-- Orientações e supervisões concluidas-->
+			<orientacao status="concluida">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<fim>2000</fim>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Cream The Rabbit</orientando>
+				<titulo>Sound-speed flying methods [2]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<fim>2000</fim>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [2]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+			<orientacao status="concluida">
+				<orientando>Sonic the Headhog</orientando>
+				<titulo>How to go faster [3]</titulo>
+				<instituicao>University of Chaos Angel</instituicao>
+				<inicio>2010</inicio>
+			</orientacao>
+		</orientacoes>
+		<!--Citações-->
+		<citacoes>
+			<autores>
+				<autor>Eggman</autor>
+				<autor> Sonic</autor>
+				<autor>Knuckles</autor>
+				<autor tipo="este">Tails</autor>
+			</autores>
+			<titulo>Uso eficiente das esmeraldas do caos</titulo>
+			<instituicao>University of Chaos Angel</instituicao>
+			<versao>3</versao>
+			<pagina>33-37</pagina>
+			<ano>2003</ano>
+		</citacoes>
+
+
+
+	</curriculo>
+	<curriculo id="2" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
+		<!-- DADOS PESSOAIS-->
+		<pessoal>
+			<nome>
+				<primeiroNome>SONIC</primeiroNome>
+				<sobrenome>FAST</sobrenome>
+				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
+			</nome>
+		</pessoal>
+	</curriculo>
+<!-- 	<curriculo id="2" dataCriacao="20-11-2015">
+		<pessoal>
+			<primeiroNome>Laís</primeiroNome>
+		</pessoal>
+	</curriculo>
+
+	<curriculo id="3" dataCriacao="19-11-2015">
+		<pessoal>
+			<primeiroNome>Tiago</primeiroNome>
+		</pessoal>
+	</curriculo> -->
+
+</cvLattes>
