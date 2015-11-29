@@ -1,0 +1,37 @@
+*********************************************************
+*	SCC 0661 – Multimídia e Hipermídia – 2º Sem./2015	*
+*	Prof. Rudinei Goularte								*	
+*	Projeto 2 - Currículo Lattes						*
+*********************************************************
+
+Alunos: Tiago Vilela Tapparo	nUSP	7153042
+		Laís PC					nUSP	
+
+O Projeto: 
+Para uma visualização mais intuitiva, a página inicial 
+mostrada para o usuário é uma lista dos nomes de todos os 
+currículos contidos no XML. Quando o usuário clica em um dos
+nomes, carrega-se o currículo Lattes desejado e impresso
+na tela para visualização. No lado superior esquerdo da tela,
+há um menu com quatro botões: "Completo", "Publicações" e
+"Orientações". Esses botões têm a função de trocar as diferentes
+visões de apresentação do currículo.
+-Completo: mostra todos os campos do Currículo
+-Publicações: mostra as informações pessoais e as publicações do
+			  currículo.
+-Orientações: mostra as informações pessoais e as orientações do
+			  currículo (sendo elas "em andamento" ou "terminada").
+-Lista: carrega a lista de currículos para que o usuário possa trocar
+		de currículo sem ter que reiniciar o programa.
+
+
+Execução do programa:
+1-Para iniciar o programa, basta abrir o arquivo "Lattes.html" utilizando
+o Firefox. 
+2-Logo em seguida deve-se escolher um dos currículos listados
+(basta clicar no próprio texto, hiperlink). 
+3-Por default, a visão carregada após a escolha do currículo será a Completa, 
+caso queira carregar alguma outra das visões deve-se clicar em um dos botões
+("Completo", "Publicações" ou "Orientações") para carregar a visão desejada.
+4-Caso queira visualizar outro currículo, basta clicar no botão "Lista", para
+voltar a lista dos currículos e realizar o passo(2).

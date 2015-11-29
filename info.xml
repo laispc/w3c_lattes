@@ -147,7 +147,16 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 
 
 	</curriculo>
-
+	<curriculo id="2" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
+		<!-- DADOS PESSOAIS-->
+		<pessoal>
+			<nome>
+				<primeiroNome>SONIC</primeiroNome>
+				<sobrenome>FAST</sobrenome>
+				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
+			</nome>
+		</pessoal>
+	</curriculo>
 <!-- 	<curriculo id="2" dataCriacao="20-11-2015">
 		<pessoal>
 			<primeiroNome>Laís</primeiroNome>

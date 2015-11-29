@@ -3,13 +3,15 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
+<xsl:param name="idCurriculo"/>
 
 	<xsl:template match="/">
 		<html>
 			<body>
 
-				<!--CURRICULO COMPLETO-->
-				<xsl:for-each select="cvLattes/curriculo[@id='1']">
+				<!--CURRICULO ORIENTACOES-->
+				<!--Seleciona apenas o curriculo com id igual ao selecionado no hiperlink-->
+				<xsl:for-each select="cvLattes/curriculo[@id=$idCurriculo]">
 					<!-- Título da página -->
 					<title>Curriculo Lattes - <xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/> </title>
 
@@ -60,7 +62,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 	      			<br />
 
 
-		      		<!--4)ORIENTAÇÕES-->
+		      		<!--ORIENTAÇÕES-->
 		      		Orientações
 
 	      			<table border="0">
