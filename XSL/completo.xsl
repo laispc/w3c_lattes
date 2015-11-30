@@ -15,132 +15,226 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 					<!-- Título da página -->
 					<title>Curriculo Lattes - <xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/> </title>
 
-					<!-- Topo da curriculo -->
+					<!-- Topo do curriculo -->
 					<img>
 	                    <xsl:attribute name="src">
 	                        <xsl:value-of select="pessoal/arquivoFoto" />
 	                    </xsl:attribute>
 	                </img>
-	                <h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1>
-	                Ultima atualização em: <xsl:value-of select="@ultimaAtualizacao" />
-	                <br />
 
+	                <table>
+	                	<tr><td>  <h1><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></h1> </td></tr>
+	                	<tr class="info"><td> Última atualização em: <xsl:value-of select="@ultimaAtualizacao" /> </td></tr>
+	                </table>
+	                <br />
 					<br />
+					<br />
+
+					<hr />
+
 					<!--1)BIOGRAFIA CURTA-->
-					Biografia curta
-					<table border="1">
+					<table class="bio">
 		      			<tr>
 		      				<td><xsl:value-of select="pessoal/biografia_curta"/></td>
 		      			</tr>
 	      			</table>
 	      			<br />
 
+	      			<hr />
+
 					<!--1)DADOS PESSOAIS-->
-					Identificação
-					<table border="1">
+					<h2>Identificação</h2>
+					<table class="seccao">
 						<!-- Nome -->
-		      			<tr bgcolor="#9acd32">
-		      				<td>Nome:</td>
+		      			<tr class="info">
+		      				<td class="campo">Nome:</td>
 		      				<td><xsl:value-of select="pessoal/nome/primeiroNome"/>&#160;<xsl:value-of select="pessoal/nome/sobrenome"/></td>
 		      			</tr>
-		      			<tr>
-		      				<td>Citado como:</td>
+		      			<tr class="info">
+		      				<td class="campo">Citado como:</td>
 		      				<td><xsl:value-of select="pessoal/nome/nomeEmCitacoes"/></td>
 		      			</tr>
 	      			</table>
 	      			<br />
 
+	      			<hr />
+
 	      			<!-- ENDEREÇO -->
-	      			Endereço
-	      			<table border="1" >
+	      			<h2>Endereço</h2>
+	      			<table class="seccao">
 		      			<!-- Rua -->
-		      			<tr bgcolor="#9adc32">
-		      				<td>Rua:</td>
-		      				<td><xsl:value-of select="pessoal/endereco/rua"/></td>
+		      			<tr class="info">
+		      				<td class="campo">Endereço:</td>
+		      				<td><xsl:value-of select="pessoal/endereco/rua"/>,&#160;
+		      					<xsl:value-of select="pessoal/endereco/numero"/>,&#160;
+		      					<xsl:value-of select="pessoal/endereco/bairro"/>.&#160;
+		      					<xsl:if test="pessoal/endereco/complemento!= null"> 
+		      						<xsl:value-of select="pessoal/endereco/complemento"/>.
+		      					</xsl:if>
+		      				</td>
+		      			</tr>
+		      			<tr class="info">
+		      				<td class="campo">CEP:</td>
+		      				<td><xsl:value-of select="pessoal/endereco/cep"/>-
+		      					<xsl:value-of select="pessoal/endereco/cidade"/>-
+		      					<xsl:value-of select="pessoal/endereco/estado"/>-
+		      					<xsl:value-of select="pessoal/endereco/pais"/>.
+		      				</td>
 		      			</tr>
 	      			</table>
 	      			<br />
 
+	      			<hr />
+
 	      			<!--2)FORMAÇÃO-->
-		      		Formação
-		      		<table border="1" >
+		      		<h2>Formação</h2>
+		      		<table class="seccao">
 		      			<xsl:for-each select="formacoes/formacao">
-		      				<tr> 		      					
-		      					<td><xsl:value-of select="inicio"/> - <xsl:value-of select="conclusao"/></td>
-		      				</tr>
-		      				<tr> 		      					
-		      					<td><xsl:value-of select="titulo"/></td>
-		      				</tr>
-		      				<tr> 		      					
-		      					<td><xsl:value-of select="instituicao"/></td>
-		      				</tr>
-		      				<tr> 		      					
-		      					<td><xsl:value-of select="orientador"/></td>
-		      				</tr>
-		      				<tr> 		      					
-		      					<td><xsl:value-of select="tema"/></td>
-		      				</tr>
+		      				<td class="campo"> 		      					
+		      					<xsl:value-of select="inicio"/> - <xsl:value-of select="conclusao"/>
+		      				</td>
+		      				<td>
+			      				<tr class="info"> 		      					
+			      					<xsl:value-of select="titulo"/>
+			      				</tr>
+			      				<tr class="info"> 		      					
+			      					<xsl:value-of select="instituicao"/>
+			      				</tr>
+			      				<tr class="info"> 		      					
+			      					Orientador: &#160; <xsl:value-of select="orientador"/>
+			      				</tr>
+			      				<tr class="info"> 		      					
+			      					Título: &#160; <xsl:value-of select="tema"/>
+			      				</tr>
+		      				</td>
 
 		      			</xsl:for-each>
 		      		</table>
 		      		<br />
 
-		      		<table border="1" >
-		      			<!-- Artigos completos publicados em periódicos  -->
-		      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
-		      				<tr>
-		      					<td><xsl:value-of select="autores"/></td>
-		      				</tr>
-		      			</xsl:for-each>
-		      		</table>
-		      		<br />
+		      		<hr />
 
 		      		<!--3)PUBLICAÇÕES-->
-		      		Publicações
-	      			- Artigos completos publicados em periódicos
-	      			<table border="1" >
-		      			<!-- Artigos completos publicados em periódicos  -->
-		      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
-		      				<tr>
-		      					<td><xsl:value-of select="autores"/></td>
-		      				</tr>
-		      			</xsl:for-each>
-	      			</table>
-	      			<br />
-		      		<!--4)ORIENTAÇÕES-->
-		      		Orientações
+		      		<h2>Publicações</h2>
+		      		<!-- Artigos completos publicados em periódicos  -->
+		      		<xsl:if test="publicacoes/artigosCompletosPublicadosEmPeriodicos!= 0">
+		      			<h3>Artigos completos publicados em periódicos</h3>
+		      			<table class="seccao" >
+			      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
+			      				<tr class="info">
+			      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="periodico"/>.&#160;<xsl:value-of select="pagina"/>.&#160;<xsl:value-of select="ano"/></td>
+			      				</tr>
+			      			</xsl:for-each>
+		      			</table>
+	      				<br />
+	      			</xsl:if>
 
-	      			<table border="0">
+	      			<!-- Livros  -->
+	      			<xsl:if test="publicacoes/livrosPublicados!= 0">
+		      			<h3>Livros </h3>
+		      			<table class="seccao">
+			      			<xsl:for-each select="publicacoes/livrosPublicados">
+			      				<tr class="info">
+			      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="cidade"/>.&#160;<xsl:value-of select="editora"/>.&#160;<xsl:value-of select="ano"/></td>
+			      				</tr>
+			      			</xsl:for-each>
+		      			</table>
+		      			<br />
+		      		</xsl:if>
+	      			<hr />
+
+		      		<!--4)ORIENTAÇÕES-->
+		      		<h2>Orientações</h2>
+
+		      		<h3>Orientações em Andamento</h3>
+	      			<table class="seccao">
 		      			<!-- Em Andamento -->
-		      			<tr> Orientações em Andamento</tr>
-			      		<xsl:for-each select="orientacoes/orientacao[@status='emAndamento']">
-			      			<tr>
-			      				<td><xsl:value-of select="orientando"/>.
-			      				<xsl:value-of select="titulo"/>.
-			      				<xsl:value-of select="instituicao"/>.
-			      				Inicio: <xsl:value-of select="inicio"/>.</td>
-			      			</tr>
-			      		</xsl:for-each>
+		      			<xsl:if test="count(orientacoes/orientacaoAnd[@tipo='IC'])!= 0"> 
+			      			<h3>Iniciação Científica</h3>
+			      			<!-- Busca todos as orientações em andamento de IC -->
+				      		<xsl:for-each select="orientacoes/orientacaoAnd[@tipo='IC']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				Inicio: <xsl:value-of select="inicio"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+				      	</xsl:if>
+			      		<xsl:if test="count(orientacoes/orientacaoAnd[@tipo='MESTRADO'])!= 0"> 
+				      		<h3>Mestrado</h3>
+				      		<!-- Busca todos as orientações em andamento de Mestrado -->
+				      		<xsl:for-each select="orientacoes/orientacaoAnd[@tipo='MESTRADO']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				Inicio: <xsl:value-of select="inicio"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+				      	</xsl:if>
+			      		<xsl:if test="count(orientacoes/orientacaoAnd[@tipo='DOUTORADO'])!= 0"> 
+				      		<h3>Doutorado</h3>
+				      		<!-- Busca todos as orientações em andamento de Doutorado -->
+				      		<xsl:for-each select="orientacoes/orientacaoAnd[@tipo='DOUTORADO']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				Inicio: <xsl:value-of select="inicio"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+			      		</xsl:if>
 	      			</table>
 	      			<br/>
-	      			<table border="0">
+	      			<h3>Orientações Concluídas</h3>
+	      			<table class="seccao">
 		      			<!-- Concluida -->
-		      			<tr> Orientações Concluídas</tr>
-			      		<xsl:for-each select="orientacoes/orientacao[@status='concluida']">
-			      			<tr>
-			      				<td><xsl:value-of select="orientando"/>.
-			      				<xsl:value-of select="titulo"/>.
-			      				<xsl:value-of select="instituicao"/>.
-			      				<xsl:value-of select="fim"/>.</td>
-			      			</tr>
-			      		</xsl:for-each>
+		      			<xsl:if test="count(orientacoes/orientacaoCon[@tipo='IC'])!= 0"> 
+			      			<h3>Iniciação Científica</h3>
+			      			<!-- Busca todos as orientações concluídas de IC -->
+				      		<xsl:for-each select="orientacoes/orientacaoCon[@tipo='IC']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				<xsl:value-of select="fim"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+				      	</xsl:if>
+				      	<xsl:if test="count(orientacoes/orientacaoCon[@tipo='MESTRADO'])!= 0"> 
+				      		<h3>Mestrado</h3>
+			      			<!-- Busca todos as orientações concluídas de Mestrado -->
+				      		<xsl:for-each select="orientacoes/orientacaoCon[@tipo='MESTRADO']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				<xsl:value-of select="fim"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+				      	</xsl:if>
+				      	<xsl:if test="count(orientacoes/orientacaoCon[@tipo='DOUTORADO'])!= 0"> 
+				      		<h3>Doutorado</h3>
+			      			<!-- Busca todos as orientações concluídas de Doutorado -->
+				      		<xsl:for-each select="orientacoes/orientacaoCon[@tipo='DOUTORADO']">
+				      			<tr class="campo">
+				      				<td class="info"><xsl:value-of select="orientando"/>.
+				      				<xsl:value-of select="titulo"/>.
+				      				<xsl:value-of select="instituicao"/>.
+				      				<xsl:value-of select="fim"/>.</td>
+				      			</tr>
+				      		</xsl:for-each>
+				      	</xsl:if>
 	      			</table>
-	      			Citações
+	      			<hr />
 
+	      			<h2>Citações</h2>
+	      			<!--CITACOES-->
 	      			<table border="0">
 	      			<xsl:for-each select="citacoes">
 		      			<tr>
-		      				<td><xsl:for-each select="autores/autor"> 
+		      				<td class="info"><xsl:for-each select="autores/autor"> 
 		      					<xsl:choose>
    								<xsl:when test="@tipo = 'este'">
    									<b><xsl:value-of select="."/>; </b>
@@ -154,7 +248,8 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 		      				<xsl:value-of select="instituicao"/>,
 		      				<xsl:value-of select="versao"/>,
 		      				<xsl:value-of select="pagina"/>,
-		      				<xsl:value-of select="ano"/>.</td>
+		      				<xsl:value-of select="ano"/>.
+		      				</td>
 		      			</tr>
 			      	</xsl:for-each>
 	      			</table>

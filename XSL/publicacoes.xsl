@@ -64,8 +64,22 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 	      			<table class="seccao">
 		      			<!-- Rua -->
 		      			<tr class="info">
-		      				<td class="campo">Rua:</td>
-		      				<td><xsl:value-of select="pessoal/endereco/rua"/></td>
+		      				<td class="campo">Endereço:</td>
+		      				<td><xsl:value-of select="pessoal/endereco/rua"/>,&#160;
+		      					<xsl:value-of select="pessoal/endereco/numero"/>,&#160;
+		      					<xsl:value-of select="pessoal/endereco/bairro"/>.&#160;
+		      					<xsl:if test="pessoal/endereco/complemento!= null"> 
+		      						<xsl:value-of select="pessoal/endereco/complemento"/>.
+		      					</xsl:if>
+		      				</td>
+		      			</tr>
+		      			<tr class="info">
+		      				<td class="campo">CEP:</td>
+		      				<td><xsl:value-of select="pessoal/endereco/cep"/>-
+		      					<xsl:value-of select="pessoal/endereco/cidade"/>-
+		      					<xsl:value-of select="pessoal/endereco/estado"/>-
+		      					<xsl:value-of select="pessoal/endereco/pais"/>.
+		      				</td>
 		      			</tr>
 	      			</table>
 	      			<br />
@@ -74,27 +88,31 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 	      		
 	      			<!--3)PUBLICAÇÕES-->
 		      		<h2>Publicações</h2>
-	      			<h3>Artigos completos publicados em periódicos</h3>
-	      			<table class="seccao" >
-		      			<!-- Artigos completos publicados em periódicos  -->
-		      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
-		      				<tr class="info">
-		      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="periodico"/>.&#160;<xsl:value-of select="pagina"/>.&#160;<xsl:value-of select="ano"/></td>
-		      				</tr>
-		      			</xsl:for-each>
-	      			</table>
-	      			<br />
+		      		<!-- Artigos completos publicados em periódicos  -->
+		      		<xsl:if test="publicacoes/artigosCompletosPublicadosEmPeriodicos!= 0">
+		      			<h3>Artigos completos publicados em periódicos</h3>
+		      			<table class="seccao" >
+			      			<xsl:for-each select="publicacoes/artigosCompletosPublicadosEmPeriodicos">
+			      				<tr class="info">
+			      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="periodico"/>.&#160;<xsl:value-of select="pagina"/>.&#160;<xsl:value-of select="ano"/></td>
+			      				</tr>
+			      			</xsl:for-each>
+		      			</table>
+	      				<br />
+	      			</xsl:if>
 
-	      			<h3>Livros</h3>
-	      			<table class="seccao" >
-		      			<!-- Artigos completos publicados em periódicos  -->
-		      			<xsl:for-each select="publicacoes/livrosPublicados">
-		      				<tr class="info">
-		      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="cidade"/>.&#160;<xsl:value-of select="editora"/>.&#160;<xsl:value-of select="ano"/></td>
-		      				</tr>
-		      			</xsl:for-each>
-	      			</table>
-	      			<br />
+	      			<!-- Livros  -->
+	      			<xsl:if test="publicacoes/livrosPublicados!= 0">
+		      			<h3>Livros </h3>
+		      			<table class="seccao">
+			      			<xsl:for-each select="publicacoes/livrosPublicados">
+			      				<tr class="info">
+			      					<td><xsl:value-of select="autores"/>.&#160;<xsl:value-of select="titulo"/>.&#160;<xsl:value-of select="cidade"/>.&#160;<xsl:value-of select="editora"/>.&#160;<xsl:value-of select="ano"/></td>
+			      				</tr>
+			      			</xsl:for-each>
+		      			</table>
+		      			<br />
+		      		</xsl:if>
 
 	      		</xsl:for-each>
 

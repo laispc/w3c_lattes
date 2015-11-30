@@ -1,10 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-targetNamespace="http://www.w3schools.com"
-xmlns="http://www.w3schools.com"
-elementFormDefault="qualified"
-attributeFormDefault="unqualified">
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-	<element name="primeiroNome" type="string"/>
-
-</schema>
+         <xs:element name="cvLattes">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="curriculo" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       
+                                       <xs:sequence>
+                                             <xs:element name="pessoal">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="nome">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="primeiroNome" type="xs:string"></xs:element>
+                                                                                 <xs:element name="sobrenome" type="xs:string"></xs:element>
+                                                                                 <xs:element name="nomeEmCitacoes" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="arquivoFoto" type="xs:string"></xs:element>
+                                                               <xs:element name="biografia_curta" type="xs:string"></xs:element>
+                                                               <xs:element name="endereco">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="rua" type="xs:string"></xs:element>
+                                                                                 <xs:element name="numero" type="xs:int"></xs:element>
+                                                                                 <xs:element name="bairro" type="xs:string"></xs:element>
+                                                                                 <xs:element name="complemento" type="xs:string" minOccurs="0"></xs:element>
+                                                                                 <xs:element name="cep" type="xs:string"></xs:element>
+                                                                                 <xs:element name="cidade" type="xs:string"></xs:element>
+                                                                                 <xs:element name="estado" type="xs:string"></xs:element>
+                                                                                 <xs:element name="pais" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="formacoes">
+                                                   <xs:complexType>
+                                                         <xs:all>
+                                                               <xs:element name="formacao">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                                 <xs:element name="instituicao" type="xs:string"></xs:element>
+                                                                                 <xs:element name="inicio" type="xs:gYear"></xs:element>
+                                                                                 <xs:element name="conclusao" type="xs:gYear" minOccurs="0"></xs:element>
+                                                                                 <xs:element name="orientador" type="xs:string"></xs:element>
+                                                                                 <xs:element name="tema" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:all>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="publicacoes">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element name="artigosCompletosPublicadosEmPeriodicos" minOccurs="0" maxOccurs="unbounded">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element name="autores" type="xs:string"></xs:element>
+                                                                              <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                              <xs:element name="periodico" type="xs:string"></xs:element>
+                                                                              <xs:element name="pagina">
+                                                                                 <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                       <xs:pattern value="([0-9])+-([0-9])+"/>
+                                                                                    </xs:restriction>
+                                                                                 </xs:simpleType>
+                                                                              </xs:element>
+                                                                              <xs:element name="ano" type="xs:gYear"></xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="livrosPublicados" minOccurs="0" maxOccurs="unbounded">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element name="autores" type="xs:string"></xs:element>
+                                                                              <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                              <xs:element name="cidade" type="xs:string"></xs:element>
+                                                                              <xs:element name="editora" type="xs:string"></xs:element>
+                                                                              <xs:element name="ano" type="xs:gYear"></xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>    
+                                                      </xs:sequence>
+                                                </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="orientacoes">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element name="orientacaoAnd" minOccurs="0" maxOccurs="unbounded">
+                                                                  <xs:complexType >
+                                                                        <xs:sequence>
+                                                                              <xs:element name="orientando" type="xs:string"></xs:element>
+                                                                              <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                              <xs:element name="instituicao" type="xs:string"></xs:element>
+                                                                              <xs:element name="inicio" type="xs:gYear" ></xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo">
+                                                                           <xs:simpleType>
+                                                                              <xs:restriction base="xs:string">
+                                                                                 <xs:pattern value="IC|MESTRADO|DOUTORADO"/>
+                                                                              </xs:restriction>
+                                                                           </xs:simpleType>
+                                                                        </xs:attribute>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="orientacaoCon" minOccurs="0" maxOccurs="unbounded">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element name="orientando" type="xs:string"></xs:element>
+                                                                              <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                              <xs:element name="instituicao" type="xs:string"></xs:element>
+                                                                              <xs:element name="fim" type="xs:gYear" ></xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo">
+                                                                           <xs:simpleType>
+                                                                              <xs:restriction base="xs:string">
+                                                                                 <xs:pattern value="IC|MESTRADO|DOUTORADO"/>
+                                                                              </xs:restriction>
+                                                                           </xs:simpleType>
+                                                                        </xs:attribute>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                      </xs:sequence>
+                                                </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="citacoes">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="autores">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="autor" maxOccurs="unbounded">
+                                                                                    <xs:complexType>
+                                                                                       <xs:extension base="xs:string"/>
+                                                                                       <xs:attribute name="tipo" type="xs:string"/>
+                                                                                    </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="titulo" type="xs:string"></xs:element>
+                                                               <xs:element name="instituicao" type="xs:string"></xs:element>
+                                                               <xs:element name="versao" type="xs:int"></xs:element>
+                                                               <xs:element name="pagina">
+                                                                  <xs:simpleType>
+                                                                     <xs:restriction base="xs:string">
+                                                                        <xs:pattern value="([0-9])+-([0-9])+"/>
+                                                                     </xs:restriction>
+                                                                  </xs:simpleType>
+                                                               </xs:element>
+                                                               <xs:element name="ano" type="xs:gYear"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="id">
+                                          <xs:simpleType>
+                                             <xs:restriction base="xs:string">
+                                                <xs:pattern value="[0-9]{7}"/>
+                                             </xs:restriction>
+                                          </xs:simpleType>
+                                       </xs:attribute>
+                                       <xs:attribute name="dataCriacao" type="xs:date"></xs:attribute>
+                                       <xs:attribute name="ultimaAtualizacao" type="xs:date"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>

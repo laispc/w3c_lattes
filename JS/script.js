@@ -66,7 +66,7 @@ var xslStylesheet;
 				xslDoc.async = false;
 				xmlDocName = "XML/info.xml";
 				xmlDoc.load(xmlDocName);
-				xslDoc.load("XSL/publi.xsl");
+				xslDoc.load("XSL/publicacoes.xsl");
 				
 	            var xsltProcessor = new XSLTProcessor();
 				xsltProcessor.importStylesheet(xslDoc);

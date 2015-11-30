@@ -3,7 +3,7 @@
 <cvLattes
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
-	<curriculo id="1" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
+	<curriculo id="0000001" dataCriacao="2015-11-21" ultimaAtualizacao="2015-11-22">
 		<!-- DADOS PESSOAIS-->
 		<pessoal>
 			<nome>
@@ -77,58 +77,55 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 				<ano>1995</ano>
 			</livrosPublicados>
 
-			<capitulosDeLivrosPublicados>
-				
-			</capitulosDeLivrosPublicados>
 		</publicacoes>
 
 				<!--ORIENTAÇÕES -->
 		<orientacoes>
 			<!-- Orientações e supervisões em andamento-->
 			
-			<orientacao status="emAndamento">
+			<orientacaoAnd tipo="DOUTORADO">
 				<orientando>Sonic the Headhog</orientando>
 				<titulo>How to go faster [4]</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
 				<inicio>2010</inicio>
-			</orientacao>
-			<orientacao status="emAndamento">
+			</orientacaoAnd>
+			<orientacaoAnd tipo="DOUTORADO">
 				<orientando>Cream The Rabbit</orientando>
 				<titulo>Sound-speed flying methods [3]</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
-				<fim>2000</fim>
-			</orientacao>
+				<inicio>2000</inicio>
+			</orientacaoAnd>
 			<!-- Orientações e supervisões concluidas-->
-			<orientacao status="concluida">
+			<orientacaoCon tipo="IC">
 				<orientando>Cream The Rabbit</orientando>
 				<titulo>Sound-speed flying methods</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
 				<fim>2000</fim>
-			</orientacao>
-			<orientacao status="concluida">
+			</orientacaoCon>
+			<orientacaoCon tipo="MESTRADO">
 				<orientando>Cream The Rabbit</orientando>
 				<titulo>Sound-speed flying methods [2]</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
 				<fim>2000</fim>
-			</orientacao>
-			<orientacao status="concluida">
+			</orientacaoCon>
+			<orientacaoCon tipo="IC">
 				<orientando>Sonic the Headhog</orientando>
 				<titulo>How to go faster</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
-				<inicio>2010</inicio>
-			</orientacao>
-			<orientacao status="concluida">
+				<fim>2010</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="IC">
 				<orientando>Sonic the Headhog</orientando>
 				<titulo>How to go faster [2]</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
-				<inicio>2010</inicio>
-			</orientacao>
-			<orientacao status="concluida">
+				<fim>2010</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="MESTRADO">
 				<orientando>Sonic the Headhog</orientando>
 				<titulo>How to go faster [3]</titulo>
 				<instituicao>University of Chaos Angel</instituicao>
-				<inicio>2010</inicio>
-			</orientacao>
+				<fim>2010</fim>
+			</orientacaoCon>
 		</orientacoes>
 		<!--Citações-->
 		<citacoes>
@@ -148,7 +145,7 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 
 
 	</curriculo>
-	<curriculo id="2" dataCriacao="21-11-2015" ultimaAtualizacao="22-11-2015">
+	<curriculo id="0000002" dataCriacao="2015-11-21" ultimaAtualizacao="2015-11-22">
 		<!-- DADOS PESSOAIS-->
 		<pessoal>
 			<nome>

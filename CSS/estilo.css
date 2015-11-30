@@ -2,6 +2,10 @@ body{
     background-color: rgb(228, 228, 228);
     text-align:center;
 }
+div.barra-titulo
+{
+    text-align:center;
+}
 div.view
 {
     background: none repeat scroll 0px 0px rgb(255, 255, 255);
@@ -38,15 +42,17 @@ h1
 }
 h2
 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color:#326C99;
     font-family: Tahoma,Geneva,sans-serif;
+    text-align: left;
 }
 h3
 {
     font-size: 1.17em;
     color:#326C99;
     font-family: Tahoma,Geneva,sans-serif;
+    text-align: left;
 }
 h5
 {
@@ -93,8 +99,46 @@ th.thvalues
   position:fixed;
   z-index:999; 
   left:5px; 
-  top:5px;
+  top:100px;
   overflow:hidden;
   border:1px dashed #CCC;
   padding:6px;
+}
+
+table.bio
+{
+    text-align: justify;
+    border: 0;
+}
+
+table.secao
+{
+    text-align: left;
+    border: 0;
+}
+
+td.campo
+{
+    text-align: right;
+    font-size: 12pt; 
+    color:#326C99;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-weight:bold;
+}
+
+tr.info
+{
+    text-align: left;
+}
+td.info
+{
+    text-align: left;
+}
+
+img
+{
+    border: 2px solid rgb(160, 186, 213);
+    width: 180px;
+    float: left;
+    border-radius: 20px;
 }
