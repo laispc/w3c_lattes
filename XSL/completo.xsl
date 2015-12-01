@@ -90,24 +90,26 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
 		      		<h2>Formação</h2>
 		      		<table class="seccao">
 		      			<xsl:for-each select="formacoes/formacao">
-		      				<td class="campo"> 		      					
-		      					<xsl:value-of select="inicio"/> - <xsl:value-of select="conclusao"/>
-		      				</td>
-		      				<td>
-			      				<tr class="info"> 		      					
-			      					<xsl:value-of select="titulo"/>
-			      				</tr>
-			      				<tr class="info"> 		      					
-			      					<xsl:value-of select="instituicao"/>
-			      				</tr>
-			      				<tr class="info"> 		      					
-			      					Orientador: &#160; <xsl:value-of select="orientador"/>
-			      				</tr>
-			      				<tr class="info"> 		      					
-			      					Título: &#160; <xsl:value-of select="tema"/>
-			      				</tr>
-		      				</td>
-
+		      				<tr>
+			      				<td class="campo"> 		      					
+			      					<xsl:value-of select="inicio"/> - <xsl:value-of select="conclusao"/>
+			      				</td>
+			      				<td>
+				      				<tr class="info"> 		      					
+				      					<xsl:value-of select="titulo"/>
+				      				</tr>
+				      				<tr class="info"> 		      					
+				      					<xsl:value-of select="instituicao"/>
+				      				</tr>
+				      				<tr class="info"> 		      					
+				      					Orientador: &#160; <xsl:value-of select="orientador"/>
+				      				</tr>
+				      				<tr class="info"> 		      					
+				      					Título: &#160; <xsl:value-of select="tema"/>
+				      				</tr>
+			      				</td>
+		      				</tr>
+		      				<br />
 		      			</xsl:for-each>
 		      		</table>
 		      		<br />

@@ -145,26 +145,288 @@ xsi:schemaLocation="http://www.w3schools.com cvLattes.xsd">
 
 
 	</curriculo>
-	<curriculo id="0000002" dataCriacao="2015-11-21" ultimaAtualizacao="2015-11-22">
+	<curriculo id="0000002" dataCriacao="1930-12-12" ultimaAtualizacao="2015-11-01">
 		<!-- DADOS PESSOAIS-->
 		<pessoal>
 			<nome>
-				<primeiroNome>SONIC</primeiroNome>
-				<sobrenome>FAST</sobrenome>
-				<nomeEmCitacoes>Prower, Miles "Tails"</nomeEmCitacoes>
+				<primeiroNome>Silvio</primeiroNome>
+				<sobrenome>Santos</sobrenome>
+				<nomeEmCitacoes>Santos, Silvio</nomeEmCitacoes>
 			</nome>
+
+			<arquivoFoto>Imagens/silvio.jpg</arquivoFoto>
+
+			<biografia_curta>
+				Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12 de dezembro de 1930), é um apresentador de televisão e empresário brasileiro. Considerado pelo público, pela imprensa e profissionais do ramo como um ícone da comunicação no Brasil. Personalidade mais admirada e de maior credibilidade creditada pelos seus compatriotas, Silvio ascendeu de vendedor ambulante à criação de um império empresarial e consagração como apresentador, comunicador e animador de televisão - entretendo cinco gerações de brasileiros.
+				
+				Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui um patrimônio avaliado em aproximadamente seis bilhões de reais.
+
+				A trajetória de Silvio se confunde com a história da televisão brasileira, pelo tempo em que atua, pela obra construída e pela influência que exerce no ramo. Nas três principais emissoras há contextos históricos dele tanto como empresário, quanto como apresentador. Além do SBT, que fundou e dirige, Rede Record e Rede Globo: na primeira foi um dos sócios entres as décadas de 70 e 80; na segunda, comprava horários em seus primeiros 10 anos e chegou a emprestar dinheiro para evitar atraso no pagamento de funcionários.
+			</biografia_curta>
+
+			<endereco>
+				<rua>Rua Dr. Otávio Pinheiro Brisola</rua>
+				<numero>18</numero>
+				<bairro>Vila Nova Universitária</bairro>
+				<complemento></complemento>
+				<cep>17012-191</cep>
+				<cidade>Bauru</cidade>
+				<estado>SP</estado>
+				<pais>Brasil</pais>
+			</endereco>
 		</pessoal>
-	</curriculo>
-<!-- 	<curriculo id="2" dataCriacao="20-11-2015">
-		<pessoal>
-			<primeiroNome>Laís</primeiroNome>
-		</pessoal>
+
+		<!--FORMAÇÃO -->
+		<formacoes>	
+			<formacao>
+				<titulo>Graduação em Bacharelado em Administração</titulo>
+				<instituicao>Universidade do baú da felicidade</instituicao>
+				<inicio>1950</inicio>
+				<conclusao>1954</conclusao>
+				<orientador>Senor Abravanel</orientador>
+				<tema>Estudo de caso de criação de pequenas e médias empresas</tema>
+			</formacao>
+			<formacao>
+				<titulo>Mestrado em Administração</titulo>
+				<instituicao>Universidade do baú da felicidade</instituicao>
+				<inicio>1955</inicio>
+				<conclusao>1956</conclusao>
+				<orientador>Senor Abravanel</orientador>
+				<tema>Estudo de caso de criação de pequenas e médias empresas</tema>
+			</formacao>
+			<formacao>
+				<titulo>Graduação em Bacharelado em Imagem e Som</titulo>
+				<instituicao>Universidade do baú da felicidade</instituicao>
+				<inicio>1956</inicio>
+				<conclusao>1959</conclusao>
+				<orientador>Steven Spielberg</orientador>
+				<tema>Uso de programas de auditório para divulgação de uma marca</tema>
+			</formacao>
+			<formacao>
+				<titulo>Doutorado em Imagem e Som</titulo>
+				<instituicao>Universidade do baú da felicidade</instituicao>
+				<inicio>1960</inicio>
+				<conclusao>1964</conclusao>
+				<orientador>Steven Spielberg</orientador>
+				<tema>A manipulação dos meios de comunicação de massa</tema>
+			</formacao>
+			<formacao>
+				<titulo>Graduação em Bacharelado em Direito</titulo>
+				<instituicao>Universidade do baú da felicidade</instituicao>
+				<inicio>1980</inicio>
+				<conclusao>1984</conclusao>
+				<orientador>Enéas Carneiro</orientador>
+				<tema>Uso da popularidade televisiva para ascensão na política</tema>
+			</formacao>
+			<formacao>
+				<titulo>Graduação em Engenharia da Computação</titulo>
+				<instituicao>Universidade de São Paulo</instituicao>
+				<inicio>2010</inicio>
+				<conclusao>2014</conclusao>
+				<orientador>Bill Jobs</orientador>
+				<tema>Algoritmo genético para decifrar qual é a música</tema>
+			</formacao>
+		</formacoes>
+
+		<!--PUBLICAÇÕES -->
+		<publicacoes>
+			<!--Artigos completos publicados em periódicos -->
+
+			<!--Livros-->
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Como abrir seu próprio negócio com Jequiti</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>1995</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio. Malandro, Sérgio</autores>
+				<titulo>Organização de Auditórios</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2000</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Mudanças, minhas mudanças. De ambulante a apresentador</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2002</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Algorítmos avançados de ordenação dos números da Tele Sena</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2005</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Investimentos bancários para iniciantes</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2010</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Tópicos avançados em Empreendedorismo</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2011</ano>
+			</livrosPublicados>
+			<livrosPublicados>
+				<autores>Santos, Silvio</autores>
+				<titulo>Como abrir sua StartUp de sucesso</titulo>
+				<cidade>Bauru</cidade>
+				<editora>Baú</editora>
+				<ano>2014</ano>
+			</livrosPublicados>
+
+		</publicacoes>
+
+				<!--ORIENTAÇÕES -->
+		<orientacoes>
+			<!-- Orientações e supervisões em andamento-->
+			<orientacaoAnd tipo="MESTRADO">
+				<orientando>Carlos Villagrán</orientando>
+				<titulo>Tópicos avançados sobre Aerolitos</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2012</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="MESTRADO">
+				<orientando>Roberto Gómez Bolaños</orientando>
+				<titulo>Visão computacional aplicada à vigilância de discos voadores</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2012</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="DOUTORADO">
+				<orientando>Sérgio Malandro</orientando>
+				<titulo>O impacto das pegadinhas na sociedade[4]</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2014</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="DOUTORADO">
+				<orientando>Carlos Alberto Nóbrega</orientando>
+				<titulo>Resistência dos materiais utilizados em bancos de praças[2]</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2014</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="DOUTORADO">
+				<orientando>Yudi Tanashiro</orientando>
+				<titulo>Arquitetura de Playstations [2]</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2014</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="MESTRADO">
+				<orientando>Pablo Hernandes</orientando>
+				<titulo>Técnicas de detecção de áudio</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2015</inicio>
+			</orientacaoAnd>
+			<orientacaoAnd tipo="MESTRADO">
+				<orientando>Pablo Hernandes</orientando>
+				<titulo>Técnicas de detecção de áudio</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2015</inicio>
+			</orientacaoAnd>
+			<!-- Orientações e supervisões concluidas-->
+			<orientacaoCon tipo="IC">
+				<orientando>Sérgio Malandro</orientando>
+				<titulo>O impacto das pegadinhas na sociedade</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2009</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="IC">
+				<orientando>Sérgio Malandro</orientando>
+				<titulo>O impacto das pegadinhas na sociedade[2]</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2010</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="MESTRADO">
+				<orientando>Sérgio Malandro</orientando>
+				<titulo>O impacto das pegadinhas na sociedade[3]</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2012</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="MESTRADO">
+				<orientando>Carlos Alberto Nóbrega</orientando>
+				<titulo>Resistência dos materiais utilizados em bancos de praças</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2006</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="IC">
+				<orientando>Yudi Tanashiro</orientando>
+				<titulo>Funções de densidade de probabilidade aplicadas em roletas</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2008</fim>
+			</orientacaoCon>
+			<orientacaoCon tipo="MESTRADO">
+				<orientando>Yudi Tanashiro</orientando>
+				<titulo>Arquitetura de Playstations</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<fim>2012</fim>
+			</orientacaoCon>			
+			<orientacaoCon tipo="DOUTORADO">
+				<orientando>Antônio Augusto de Moraes Liberato</orientando>
+				<titulo>Estudos em investimento no setor de combustíveis fósseis</titulo>
+				<instituicao>Universidade SBT</instituicao>
+				<inicio>2002</inicio>
+			</orientacaoCon>
+		</orientacoes>
+		<!--Citações-->
+		<citacoes>
+			<autores>
+				<autor>Malandro, Sérgio</autor>
+				<autor tipo="este">Santos, Silvio</autor>
+			</autores>
+			<titulo>Aplicação prática de pegadinhas</titulo>
+			<instituicao>Universidade SBT</instituicao>
+			<versao>2</versao>
+			<pagina>33-37</pagina>
+			<ano>2003</ano>
+		</citacoes>
+		<citacoes>
+			<autores>
+				<autor>Liberato, Augusto</autor>
+				<autor>Silva, Fausto</autor>
+				<autor>Kleber, João</autor>
+				<autor tipo="este">Santos, Silvio</autor>
+			</autores>
+			<titulo>Uso intensivo de propagandas em programas de auditório</titulo>
+			<instituicao>Universidade SBT</instituicao>
+			<versao>5</versao>
+			<pagina>02-14</pagina>
+			<ano>2007</ano>
+		</citacoes>
+		<citacoes>
+			<autores>
+				<autor>Tanashiro, Yudi</autor>
+				<autor>Justus, Roberto</autor>
+				<autor tipo="este">Santos, Silvio</autor>
+			</autores>
+			<titulo>Métodos numéricos para cálculo da esperança dos números da Tele Sena</titulo>
+			<instituicao>Universdade SBT</instituicao>
+			<versao>1</versao>
+			<pagina>04-07</pagina>
+			<ano>2007</ano>
+		</citacoes>
+
+		<citacoes>
+			<autores>
+				<autor>Mark Zuckerberg</autor>
+				<autor>Eduardo Saverin</autor>
+				<autor>Dustin Moskovitz</autor>
+				<autor>Chris Hughes</autor>
+				<autor tipo="este">Santos, Silvio</autor>
+			</autores>
+			<titulo>Técnicas para criação de StartUps</titulo>
+			<instituicao>University of Harvard</instituicao>
+			<versao>3</versao>
+			<pagina>33-37</pagina>
+			<ano>2003</ano>
+		</citacoes>
 	</curriculo>
 
-	<curriculo id="3" dataCriacao="19-11-2015">
-		<pessoal>
-			<primeiroNome>Tiago</primeiroNome>
-		</pessoal>
-	</curriculo> -->
 
 </cvLattes>
